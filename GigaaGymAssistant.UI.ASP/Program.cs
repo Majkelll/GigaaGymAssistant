@@ -1,4 +1,7 @@
 using GigaaGymAssistant.Domain.DI;
+using GigaaGymAssistant.Infrastructure.EntityFramework;
+using GigaaGymAssistant.Infrastructure.EntityFramework.Entities;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDependency(builder.Configuration);
+builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 
 var app = builder.Build();
 
@@ -18,6 +22,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+using (var scope = app.Services.CreateScope())
+{
+    var seeder = scope.ServiceProvider.GetService<DbSeeder>();
+    seeder.Seed();
+}
+
+app.UseAuthentication();
 
 app.UseHttpsRedirection();
 

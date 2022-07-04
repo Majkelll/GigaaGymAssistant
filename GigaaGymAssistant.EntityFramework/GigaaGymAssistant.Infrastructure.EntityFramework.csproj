@@ -15,4 +15,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GigaaGymAssistant.Interfaces.Infrastructure\GigaaGymAssistant.Interfaces.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

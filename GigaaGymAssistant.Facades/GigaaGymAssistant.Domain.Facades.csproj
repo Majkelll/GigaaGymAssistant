@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GigaaGymAssistant.Interfaces.Facades\GigaaGymAssistant.Interfaces.Facades.csproj" />
+    <ProjectReference Include="..\GigaaGymAssistant.Interfaces.Infrastructure\GigaaGymAssistant.Interfaces.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
