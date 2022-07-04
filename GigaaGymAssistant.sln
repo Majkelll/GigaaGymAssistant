@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GigaaGymAssistant.Domain.Common", "GigaaGymAssistant.Common\GigaaGymAssistant.Domain.Common.csproj", "{F6B9B79A-3EA1-4E5A-A31B-F94D776FF90C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GigaaGymAssistant.Domain.DI", "GigaaGymAssistant.DI\GigaaGymAssistant.Domain.DI.csproj", "{C57FD558-0826-470D-A30C-359409339616}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GigaaGymAssistant.Domain.Facades", "GigaaGymAssistant.Facades\GigaaGymAssistant.Domain.Facades.csproj", "{564E1012-A87C-45EC-87A8-8F289605D85F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GigaaGymAssistant.Interfaces.Facades", "GigaaGymAssistant.Interfaces.Facades\GigaaGymAssistant.Interfaces.Facades.csproj", "{FC93EF4E-B805-44B8-BC11-06D38F10D740}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GigaaGymAssistant.Interfaces.Infrastructure", "GigaaGymAssistant.Interfaces.Infrastructure\GigaaGymAssistant.Interfaces.Infrastructure.csproj", "{A8C24AA6-2AE1-479D-9436-A048FF08BC88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GigaaGymAssistant.Infrastructure.EntityFramework", "GigaaGymAssistant.EntityFramework\GigaaGymAssistant.Infrastructure.EntityFramework.csproj", "{069C532A-EBEB-4CC8-82FA-F488A50640A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GigaaGymAssistant.UI.ASP", "GigaaGymAssistant.UI.ASP\GigaaGymAssistant.UI.ASP.csproj", "{F82C4A0C-5A82-4BA7-B41A-6AFBC0B314E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6B9B79A-3EA1-4E5A-A31B-F94D776FF90C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B9B79A-3EA1-4E5A-A31B-F94D776FF90C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B9B79A-3EA1-4E5A-A31B-F94D776FF90C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B9B79A-3EA1-4E5A-A31B-F94D776FF90C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C57FD558-0826-470D-A30C-359409339616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C57FD558-0826-470D-A30C-359409339616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C57FD558-0826-470D-A30C-359409339616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C57FD558-0826-470D-A30C-359409339616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{564E1012-A87C-45EC-87A8-8F289605D85F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564E1012-A87C-45EC-87A8-8F289605D85F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564E1012-A87C-45EC-87A8-8F289605D85F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564E1012-A87C-45EC-87A8-8F289605D85F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC93EF4E-B805-44B8-BC11-06D38F10D740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC93EF4E-B805-44B8-BC11-06D38F10D740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC93EF4E-B805-44B8-BC11-06D38F10D740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC93EF4E-B805-44B8-BC11-06D38F10D740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8C24AA6-2AE1-479D-9436-A048FF08BC88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C24AA6-2AE1-479D-9436-A048FF08BC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C24AA6-2AE1-479D-9436-A048FF08BC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C24AA6-2AE1-479D-9436-A048FF08BC88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{069C532A-EBEB-4CC8-82FA-F488A50640A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{069C532A-EBEB-4CC8-82FA-F488A50640A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{069C532A-EBEB-4CC8-82FA-F488A50640A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{069C532A-EBEB-4CC8-82FA-F488A50640A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F82C4A0C-5A82-4BA7-B41A-6AFBC0B314E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82C4A0C-5A82-4BA7-B41A-6AFBC0B314E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82C4A0C-5A82-4BA7-B41A-6AFBC0B314E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F82C4A0C-5A82-4BA7-B41A-6AFBC0B314E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2C73E4B-8E9C-46FF-B7E7-CEDE2BB1BF6D}
+	EndGlobalSection
+EndGlobal
