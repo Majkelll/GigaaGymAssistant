@@ -1,4 +1,5 @@
 using GigaaGymAssistant.Domain.DI;
+using GigaaGymAssistant.Infrastructure.EntityFramework;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+using (var scope = app.Services.CreateScope())
+{
+    var seeder = scope.ServiceProvider.GetService<DbSeeder>();
+    seeder.Seed();
+}
+
+app.UseAuthentication();
 
 app.UseHttpsRedirection();
 

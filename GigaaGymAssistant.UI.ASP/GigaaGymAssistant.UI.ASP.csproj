@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GigaaGymAssistant.DI\GigaaGymAssistant.Domain.DI.csproj" />
+    <ProjectReference Include="..\GigaaGymAssistant.Interfaces.Facades\GigaaGymAssistant.Interfaces.Facades.csproj" />
   </ItemGroup>
 
 </Project>
