@@ -1,10 +1,9 @@
 ﻿using GigaaGymAssistant.Domain.Common.Models.User;
 
-namespace GigaaGymAssistant.Interfaces.Facades
+namespace GigaaGymAssistant.Interfaces.Facades;
+
+public interface IAccountFcd
 {
-    public interface IAccountFcd
-    {
-        UserDTO RegisterUser(RegisterDTO registerDTO);
-        UserDTO LoginUser(LoginDTO loginDTO);
-    }
+    UserDTO RegisterUser(RegisterDTO registerDTO);
+    UserDTO LoginUser(LoginDTO loginDTO);
 }

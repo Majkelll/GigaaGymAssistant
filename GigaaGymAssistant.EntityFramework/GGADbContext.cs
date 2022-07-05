@@ -7,13 +7,14 @@ namespace GigaaGymAssistant.Infrastructure.EntityFramework;
 public class GGADbContext : DbContext
 {
     private readonly IConfiguration _config;
-    public DbSet<User> Users { get; set; }
-    public DbSet<Role> Roles { get; set; }
 
     public GGADbContext(IConfiguration config)
     {
         _config = config;
     }
+
+    public DbSet<User> Users { get; set; }
+    public DbSet<Role> Roles { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

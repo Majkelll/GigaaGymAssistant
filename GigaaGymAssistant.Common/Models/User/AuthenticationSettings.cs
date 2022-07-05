@@ -1,9 +1,8 @@
-﻿namespace GigaaGymAssistant.Domain.Common.Models.User
+﻿namespace GigaaGymAssistant.Domain.Common.Models.User;
+
+public class AuthenticationSettings
 {
-    public class AuthenticationSettings
-    {
-        public string JwtKey { get; set; }
-        public int JwtExpireDays { get; set; }
-        public string JwtIssuer { get; set; }
-    }
+    public string JwtKey { get; set; }
+    public int JwtExpireDays { get; set; }
+    public string JwtIssuer { get; set; }
 }

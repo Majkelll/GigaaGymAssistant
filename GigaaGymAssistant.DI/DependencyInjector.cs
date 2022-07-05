@@ -1,11 +1,16 @@
 ﻿using GigaaGymAssistant.Domain.Common.Models.User;
+using GigaaGymAssistant.Domain.Common.Utils;
+using GigaaGymAssistant.Domain.Facades;
 using GigaaGymAssistant.Infrastructure.EntityFramework;
+using GigaaGymAssistant.Infrastructure.EntityFramework.Entities;
+using GigaaGymAssistant.Infrastructure.EntityFramework.Services;
+using GigaaGymAssistant.Interfaces.Facades;
+using GigaaGymAssistant.Interfaces.Infrastructure;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-
 
 namespace GigaaGymAssistant.Domain.DI;
 
@@ -15,6 +20,10 @@ public static class DependencyInjector
     {
         serviceCollection.AddDbContext<GGADbContext>();
         serviceCollection.AddScoped<DbSeeder>();
+        serviceCollection.AddScoped<IAccountFcd, AccountFcd>();
+        serviceCollection.AddScoped<IAccountSrv, AccountSrv>();
+        serviceCollection.AddScoped<IJwtUtils, JwtUtils>();
+        serviceCollection.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 
         var authenticationSettings = new AuthenticationSettings();
         configuration.GetSection("Authentication").Bind(authenticationSettings);
@@ -35,5 +44,6 @@ public static class DependencyInjector
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authenticationSettings.JwtKey))
             };
         });
+        serviceCollection.AddSingleton(authenticationSettings);
     }
 }

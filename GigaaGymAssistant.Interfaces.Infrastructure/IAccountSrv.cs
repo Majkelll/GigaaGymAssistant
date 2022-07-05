@@ -1,10 +1,9 @@
 ﻿using GigaaGymAssistant.Domain.Common.Models.User;
 
-namespace GigaaGymAssistant.Interfaces.Infrastructure
+namespace GigaaGymAssistant.Interfaces.Infrastructure;
+
+public interface IAccountSrv
 {
-    public interface IAccountSrv
-    {
-        UserDTO RegisterUser(RegisterDTO registerDTO);
-        UserDTO LoginUser(LoginDTO loginDTO);
-    }
+    UserDTO RegisterUser(RegisterDTO registerDTO);
+    UserDTO LoginUser(LoginDTO loginDTO);
 }

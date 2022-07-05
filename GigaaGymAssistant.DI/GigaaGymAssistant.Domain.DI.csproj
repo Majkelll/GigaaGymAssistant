@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GigaaGymAssistant.EntityFramework\GigaaGymAssistant.Infrastructure.EntityFramework.csproj" />
+    <ProjectReference Include="..\GigaaGymAssistant.Facades\GigaaGymAssistant.Domain.Facades.csproj" />
   </ItemGroup>
 
 </Project>

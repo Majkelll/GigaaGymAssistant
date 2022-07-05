@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.6">
@@ -16,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GigaaGymAssistant.Common\GigaaGymAssistant.Domain.Common.csproj" />
     <ProjectReference Include="..\GigaaGymAssistant.Interfaces.Infrastructure\GigaaGymAssistant.Interfaces.Infrastructure.csproj" />
   </ItemGroup>
 
