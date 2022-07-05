@@ -26,6 +26,10 @@ using (var scope = app.Services.CreateScope())
     seeder.Seed();
 }
 
+app.UseCors(options => options.AllowAnyOrigin()
+    .AllowAnyHeader()
+    .AllowAnyMethod());
+
 app.UseAuthentication();
 
 app.UseHttpsRedirection();
