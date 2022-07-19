@@ -12,5 +12,6 @@ public class RegisterDTO
 
     [Required][MinLength(6)] public string Password { get; set; }
 
+    //TUDO Remove from this DTO
     public int RoleId { get; set; } = 1;
 }
